@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gamerzz</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<!--start-->
+	<nav class="navbar">
+		<div class="logo">Props</div>
+		<div class="nav">
+			<ul class="main-nav">
+				<li class="nav-items">
+					<a href="#top" class="top-link">Top</a>
+				</li>
+				<li class="nav-items" id="nav-b-items" data-target="modal1">
+					<button class="nav-btn" id="loginBtn">Log In</button>
+				</li>
+				<li class="nav-items" id="nav-b-items" data-target="modal2">
+					<button class="nav-btn" id="signupBtn">Sign Up</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--section hero-->
+	<section class="hero-sect" id="top">
+		<div class="hs-c container">
+			<div class="col-1">
+				<h1 class="hs-hd">Secure Properties</h1>
+				<p class="hs-sub">Secure all your projects and properties with us. We will take care of your props a nice secured way to handle your props.</p>
+				<button class="hs-cta" id="modal1-trigger-ad1">Start Now</button>
+			</div>
+			<div class="col-2">
+				<div class="img-cont">
+					<img src="./assets/phone.png" alt="A phone">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- modal-container(other content: ontop) -->
+	<div class="modal" id="modal2">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="md-hd">Sign Up</h2>
+				<i class="close">&times;</i>
+			</div>
+			<form class="signup-form" id="signUp-f-1">
+				<div class="form-group">
+					<label for="signupName">First Name</label>
+					<input type="text" id="signupName" required="" autocomplete="off">
+				</div>				
+				<div class="form-group">
+					<label for="signupEmail">Email</label>
+					<input type="email" id="signupEmail" required="" autocomplete="off">
+				</div>
+				<div class="form-group">
+					<label for="signupPass">Password</label>
+					<input type="password" id="signupPass" required="" autocomplete="off">
+				</div>
+				<div class="md-f-cta-cont">
+					<button type="submit" class="md-f-cta">Sign Up</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="modal1">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="md-hd">Log In</h2>
+				<i class="close">&times;</i>
+			</div>
+			<form class="signup-form" id="signUp-f-2">
+				<div class="form-group">
+					<label for="signupEmail">Email</label>
+					<input type="email" id="loginEmail" required="" autocomplete="off">
+				</div>
+				<div class="form-group">
+					<label for="signupPass">Password</label>
+					<input type="password" id="loginPass" required="" autocomplete="off">
+				</div>
+				<div class="md-f-cta-cont">
+					<button type="submit" class="md-f-cta">Log In</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="toast-container">
+		<!--<div class="success toast">
+			<div class="toast-msg">
+			either success msg or error
+			successss
+			</div>
+		</div>-->
+	</div>
+	<!--end-->
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  		var firebaseConfig = {
+    		apiKey: "AIzaSyA9DtAPM-12xsN7ks6ZWBbuiySk474C398",
+    		authDomain: "simple-auth-840db.firebaseapp.com",
+    		projectId: "simple-auth-840db",
+    		storageBucket: "simple-auth-840db.appspot.com",
+    		messagingSenderId: "708108546689",
+    		appId: "1:708108546689:web:d8de84805315fcd5c51380",
+    		measurementId: "G-W9V86DJZW2"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+  		const auth = firebase.auth();
+	</script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
