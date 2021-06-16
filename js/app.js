@@ -198,9 +198,9 @@ loginForm.addEventListener('submit', e => {
 
 
 
+
 //TODO 
 // add auth observer 
-// add logout functionality
 
 
 

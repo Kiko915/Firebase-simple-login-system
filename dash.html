@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Dashboard - user grant</title>
+</head>
+<body>
+	<!--start-->
+	<nav class="navbar">
+		<div class="logo">Props</div>
+		<ul class="main-nav">
+			<li class="nav-items" id="logout-u">
+				<button class="nav-btn">Logout</button>
+			</li>
+		</ul>
+	</nav>
+	<section class="wc-sect">
+		<div class="container">
+			<div class="panel">
+				<h2>Welcome <span class="display-name">{User}</span></h2>
+			</div>
+		</div>
+	</section>
+	<div class="toastContainer"></div>
+	<!--end-->
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  		var firebaseConfig = {
+    		apiKey: "AIzaSyA9DtAPM-12xsN7ks6ZWBbuiySk474C398",
+    		authDomain: "simple-auth-840db.firebaseapp.com",
+    		projectId: "simple-auth-840db",
+    		storageBucket: "simple-auth-840db.appspot.com",
+    		messagingSenderId: "708108546689",
+    		appId: "1:708108546689:web:d8de84805315fcd5c51380",
+    		measurementId: "G-W9V86DJZW2"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+  		const auth = firebase.auth();
+	</script>
+	<!--<script src="./js/app.js"></script>-->
+	<script src="./js/auth-d.js"></script>
+</body>
+</html>

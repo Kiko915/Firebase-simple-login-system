@@ -239,6 +239,23 @@ body {
 } 
 
 
+/* dashboard styling */
+.wc-sect {
+	padding-top: 2em;
+}
+
+.panel {
+	text-align: center;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 3em;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+
 
 
 
